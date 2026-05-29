@@ -1,25 +1,96 @@
+/* universal-selectors-start */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-body {
-    background-color: #15120b;
-    color: white;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* universal-selectors-ends */
 
 
+
+/*  pseudo-class starts */
+:root {
+    --background-color: #15120b;
+    --primary-text-color: #d7d6d5;
+    --highlight-color: #f54e00;
 }
-
+button{
+    cursor: pointer;
+}
 @font-face {
     font-family: Cursor-Gothic;
     src: url(/assets/fonts/CursorGothic-RegularFont.woff2);
 }
+/* pseudo-class ends */
 
-h2 {
+/* body css starts */
+body {
+
+    background-color: var(--background-color);
+    color: var(--primary-text-color);
     font-family: Cursor-Gothic;
+    
 }
+/* body css ends */
+
+/* nav css starts */
+#site-header{
+    background-color: var(--background-color);
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+.main-header{
+    width: 1300px;
+    height: 52px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+}
+
+.head-logo > img{
+width: 100px;
+}
+
+
+.main-menu > ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    
+}
+
+.main-menu > ul > li{
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: 500;
+}
+
+.head-buttons{
+    display: flex;
+    gap: 10px;
+}
+
+.head-button{
+    font-size: 14px;
+    border-radius:20px;
+    padding: 6px 10px;
+    border: none;
+  
+}
+.head-button-1{
+  background-color: transparent;
+  color: #d7d6d5;
+}
+.head-button-2{
+background-color: transparent;
+color: #d7d6d5;
+border: 1px solid #d7d6d5;
+}
+
+/* nav css end */
+
+
