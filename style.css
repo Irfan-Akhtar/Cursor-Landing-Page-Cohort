@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #15120b;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+@font-face {
+    font-family: Cursor-Gothic;
+    src: url(/assets/fonts/CursorGothic-RegularFont.woff2);
+}
+
+h2 {
+    font-family: Cursor-Gothic;
+}
