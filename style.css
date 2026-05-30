@@ -16,6 +16,7 @@
 }
 button{
     cursor: pointer;
+    background-color: #d7d6d5;
 }
 @font-face {
     font-family: Cursor-Gothic;
@@ -94,3 +95,41 @@ border: 1px solid #d7d6d5;
 /* nav css end */
 
 
+/* main css start */
+#hero-section{
+    padding: 110px 0px 67px 0px;
+    height: 1024px;
+    /* background-color: blue; */
+}
+.hero-section-1{
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap:20px
+}
+
+.hero-section-1 > p{
+    font-size: 16px;
+}
+
+.hero-section-1 > h1,h2{
+    font-size: 36px;
+    /* text-wrap: balance; */
+}
+
+.hero-section-1 > h2{
+    width: 510px;
+}
+
+.hero-section-1 > button{
+    font-size: 16px;
+    border-radius:30px;
+    padding: 12px 22px;
+    border: none;
+}
+.hero-section-1-img{
+    height: 720px;
+}
+/* main css end */
